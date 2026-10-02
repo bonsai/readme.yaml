@@ -1,0 +1,51 @@
+schema: "readme.yaml/v0"
+
+repository:
+  name: readme.yaml
+  purpose: "機械が最初に読むためのREADME仕様"
+
+description: >
+  README.mdを補完し、AIやツールがリポジトリの全体像を
+  少ない読み取り量で把握するための機械可読メタデータ。
+
+principles:
+  - "人間向けREADMEを置き換えない"
+  - "README.mdと補完関係にする"
+  - "まず全体像を読み、必要なファイルだけ深掘りする"
+  - "統計情報は可能な限り自動生成する"
+
+reader:
+  primary: machine
+  secondary:
+    - ai
+    - tooling
+
+read:
+  human: README.md
+  machine: README.yaml
+  demo: index.html
+  source: .
+
+metadata:
+  topics: []
+  tags: []
+  status: unknown
+  type: unknown
+  skills: []
+
+stats:
+  source: auto
+  commits: auto
+  files: auto
+  languages: auto
+
+portfolio:
+  featured: false
+
+relations:
+  related: []
+  derived_from: []
+  evolves_to: []
+
+history:
+  source: ".koseki"
